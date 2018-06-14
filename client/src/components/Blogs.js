@@ -1,23 +1,23 @@
 import React from 'react';
 import '../App.css';
+import { connect } from 'react-redux';
+import { getBlogs } from '../actions/blogs';
 
-componentDidMount() {
-axios.get()
-.then( res => {
-
-})
-.catch( err => {})
-
-}
 
 class Blogs extends React.Component {
+  componentDidMount() {
+    //this.props.dispatch(getBlogs())
+  }
+
   render() {
     return(
       <div>
-        <h1>Blogs</h1>
+        <h1>
+          Blogs
+        </h1>
       </div>
     )
   }
 }
 
-export default Blogs;
+export default connect()(Blogs);

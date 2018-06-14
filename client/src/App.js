@@ -1,16 +1,16 @@
-import React, { Component } from 'react';
+import React from 'react';
+import BlogForm from './BlogForm';
+import BlogList from './BlogList';
+import Footer from './Footer';
 import logo from './logo.svg';
 import './App.css';
-import Blogs from './components/Blogs';
 
-class App extends Component {
-  render() {
-    return (
-      <div>
-        <Blogs/>
-      </div>
-    )
-  }
-}
 
+const App = () => ( 
+  <div className="App">
+    <BlogForm />
+    <BlogList />
+    <Footer />
+  </div>
+);
 export default App;
